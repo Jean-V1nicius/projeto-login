@@ -38,17 +38,25 @@
     </main>
 
     <script>
-        if (innerHeight <= 530) {
+        if (innerHeight <= 530 && innerWidth < 768) {
             main.style.height = '530px'
         }
 
+        if (innerWidth >= 768 && innerHeight <= 430){
+            main.style.height = '430px'
+        }
+
         function resizeViewport() {
-            if (innerHeight <= 530) {
+            if (innerHeight <= 530 && innerWidth < 768) {
                 // imagem.style.float = 'left'
                 // formulario.style.float = 'right'
                 main.style.height = '530px'
             } else {
                 main.style.height = '100vh'
+            }
+
+            if (innerWidth >= 768 && innerHeight <= 430) {
+                main.style.height = '430px'
             }
         }
     </script>
