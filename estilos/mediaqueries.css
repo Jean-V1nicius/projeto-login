@@ -1,1 +1,127 @@
 @charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, var(--cor02), var(--cor05));
+    }
+
+    div#login {
+        width: 80vw;
+        height: 400px;
+    }
+
+    div#imagem {
+        width: 45%;
+        height: 100%;
+        float: right;
+    }
+
+    section#formulario {
+        width: 55%;
+        height: 100%;
+        float: left;
+    }
+
+    section#formulario h1 {
+        font-size: 2em;
+        margin: 15px;
+    }
+
+    section#formulario p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    form div.campo input {
+        font-size: 18px;
+    }
+
+    form div#boxBotao .material-icons-outlined {
+        left: 36%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: linear-gradient(to top, var(--cor02), var(--cor05));
+    }
+
+    div#login {
+        width: 80vw;
+        height: 400px;
+    }
+
+    div#imagem {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    section#formulario {
+        width: 50%;
+        height: 100%;
+        float: right;
+    }
+
+    section#formulario h1 {
+        font-size: 2em;
+        margin: 15px;
+    }
+
+    section#formulario p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    form div.campo input {
+        font-size: 18px;
+    }
+
+    form div#boxBotao .material-icons-outlined {
+        left: 36%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    body {
+        background: var(--cor05) url("../imagens/metal.jpg") center center no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+
+    div#login {
+        width: 642px;
+        height: 400px;
+        background-color: white;
+    }
+
+    div#imagem {
+        display: none;
+    }
+
+    section#formulario {
+        width: 510px;
+        height: 100%;
+        margin: auto;
+        margin-top: 10px;
+        padding: 10px 20px;
+    }
+
+    section#formulario h1 {
+        font-size: 2.5em;
+        margin: 15px;
+    }
+
+    section#formulario p {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    form div.campo input {
+        font-size: 18px;
+    }
+
+    form div#boxBotao .material-icons-outlined {
+        left: 41%;
+    }
+}

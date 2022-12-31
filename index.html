@@ -38,6 +38,10 @@
     </main>
 
     <script>
+        if (innerHeight <= 530) {
+            main.style.height = '530px'
+        }
+
         function resizeViewport() {
             if (innerHeight <= 530) {
                 // imagem.style.float = 'left'
