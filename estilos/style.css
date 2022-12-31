@@ -1,1 +1,160 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --cor01: #5fdacb;
+    --cor02: #49a09d;
+    --cor03: #38757a;
+    --cor04: #914DC4;
+    --cor05: #5f2c82;
+
+    --fonte-padrao: 'Roboto', Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+}
+
+html, body, main {
+    width: 100vw;
+    height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+body {
+    background-color: var(--cor05);
+}
+
+main {
+    position: relative;
+    background-color: var(--cor05);
+    overflow-y: auto;
+    height: 100vh;
+}
+
+div#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+
+    transform: translate(-50%, -50%);
+}
+
+div#imagem {
+    width: 100%;
+    height: 40%;
+
+    background: var(--cor02) url("../imagens/metal.jpg") left bottom no-repeat;
+    background-size: cover;
+}
+
+section#formulario {
+    background-color: white;
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+}
+
+section#formulario h1 {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+section#formulario p {
+    text-align: center;
+}
+
+form div.campo {
+    position: relative;
+    background-color: var(--cor05);
+    
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px auto;
+    /* overflow: hidden; */
+}
+
+form > div.campo .material-icons-outlined {
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+}
+
+form div.campo input {
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 40px;
+    border: none;
+    text-indent: 5px;
+    
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.374);
+}
+
+form .campo input:focus-visible {
+    outline: none;
+    background-color: white;
+}
+
+.botao {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+form div#boxBotao {
+    position: relative;
+}
+
+form > div#boxBotao .material-icons-outlined {
+    position: absolute;
+    top: 5px;
+    left: 67px;
+    color: white;
+}
+
+form input[type=submit] {
+    border: none;
+    color: white;
+    background-color: var(--cor02);
+}
+
+form input[type=submit]:hover {
+    background-color: var(--cor01);
+}
+
+form input[type=submit]:active {
+    color: var(--cor03);
+}
+
+form a#lkBotao {
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid var(--cor02);
+    color: var(--cor02);
+}
+
+form a#lkBotao:hover {
+    background-color: var(--cor01);
+    color: white;
+}
+
+form a#lkBotao:active {
+    color: var(--cor03);
+}
+
+form > a#lkBotao .material-icons-outlined {
+    transform: translateY(5px);
+}

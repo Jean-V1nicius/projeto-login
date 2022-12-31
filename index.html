@@ -7,9 +7,10 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediaqueries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
-<body>
-    <main>
+<body onresize="resizeViewport()">
+    <main id="main">
         <div id="login">
             <div id="imagem">
 
@@ -17,8 +18,35 @@
             <section id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem vindo novamente! Faça login para acessar sua conta.</p>
+                <form action="" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="iEmail"><span class="material-icons-outlined">account_circle</span></label>
+                        <input type="email" name="email" id="iEmail" required placeholder="seu e-mail" autocomplete="email" minlength="15">
+                    </div>
+                    <div class="campo">
+                        <label for="iSenha"><span class="material-icons-outlined">key</span></label>
+                        <input type="password" name="senha" id="iSenha" required autocomplete="current-password" placeholder="sua senha" minlength="8" maxlength="20">
+                    </div>
+                    <div id="boxBotao">
+                        <span id="iconDoor" class="material-icons-outlined">sensor_door</span>
+                        <input class="botao" type="submit" value="Entrar" onmousedown="iconDoor.style.color = 'var(--cor03)'" onmouseup="iconDoor.style.color = ''">
+                    </div>
+                    <a id="lkBotao" class="botao" href="#">Esqueci a senha <span class="material-icons-outlined">email</span></a>
+                </form>
             </section>
         </div>
     </main>
+
+    <script>
+        function resizeViewport() {
+            if (innerHeight <= 530) {
+                // imagem.style.float = 'left'
+                // formulario.style.float = 'right'
+                main.style.height = '530px'
+            } else {
+                main.style.height = '100vh'
+            }
+        }
+    </script>
 </body>
 </html>
